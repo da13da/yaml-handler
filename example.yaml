@@ -1,0 +1,15 @@
+version: "3.1.1"
+description: ""
+steps:
+  - action: Move
+    description: ""
+    src: "./resources/test1/src"
+    dest: "./resources/test2/dest"
+  - action: UpdateJson
+    description: ""
+    file: "resources/config.json"
+    field: "a.b"
+    value: "new_value"
+  - action: Command
+    description: ""
+    command: "echo 'Hello, World!'"
